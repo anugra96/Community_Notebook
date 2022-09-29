@@ -1,0 +1,134 @@
+@import "../../global.scss";
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.Meta {
+    position: absolute;
+    bottom: 50px;
+    right: 25px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #afdfe4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 0px 0px 12px 3px #afdfe4;
+    box-shadow: 0px 0px 12px 3px #afdfe4;
+    z-index: 4;
+
+
+    @include mobile {
+        height: 25px;
+        width: 25px;
+        bottom: 2%;
+        right: 2%;
+        z-index: 4;
+    }
+
+}
+
+
+
+.Meta-Active {
+    position: absolute;
+    bottom: 50px;
+    right: 25px;
+    height: auto;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #afdfe4;
+    padding: 20px;
+    justify-content: space-evenly;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 0px 0px 12px 3px #afdfe4;
+    box-shadow: 0px 0px 12px 3px #afdfe4;
+    z-index: 4;
+
+
+
+    @include mobile {
+        height: max-content;
+        width: 300px;
+        top: -15%;
+        right: 6%;
+        z-index: 4;
+    }
+
+    .land-acknowledgement {
+        animation: fadeIn 2.5s;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+
+        .heading {
+            font-size: 22px;
+            font-family: "Roboto";
+            font-weight: 500;
+            color: $subheading_color;
+            
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    }
+
+
+    .details {
+        animation: fadeIn 2.5s;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+
+        .heading {
+            font-size: 22px;
+            font-family: "Roboto";
+            font-weight: 500;
+            color: $subheading_color;
+            
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        a {
+            color: $subheading_color;
+            font-weight: 700;
+        }
+    }
+
+    .closebutton {
+        animation: fadeIn 2.5s;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+        height: 30px;
+        width: 50%;
+        background-color: teal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+
+
+}

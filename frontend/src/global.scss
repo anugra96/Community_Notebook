@@ -1,0 +1,13 @@
+$mainColor: #18b5ca;
+
+$width: 768px;
+$heading_color: #241F59;
+$subheading_color: #3C6E71;
+$body_color: black;
+
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}

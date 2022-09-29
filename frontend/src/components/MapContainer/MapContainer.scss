@@ -1,0 +1,205 @@
+@import "../../global.scss";
+
+
+.AddNew {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 50px;
+  width: auto;
+  background-color: white;
+  color: black;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #afdfe4;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 12px 3px #afdfe4;
+  font-size: 15px;
+  font-weight: 600;
+
+  span {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @include mobile {
+    top: 86.5%;
+    left: 1%;
+    height: 53px;
+    width: 154px;
+    z-index: 3;
+  }
+}
+
+.CenterDot {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ConfirmButton {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 55px;
+  width: auto;
+  background-color: white;
+  color: black;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #afdfe4;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 12px 3px #afdfe4;
+  font-size: 15px;
+  font-weight: 600;
+
+  span {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @include mobile {
+    top: 87%;
+    left: 1%;
+    height: 53px;
+    width: 154px;
+    z-index: 3;
+  }
+}
+
+h4 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  color: $subheading_color;
+
+  
+  @include mobile{
+      font-size: 15px;
+  }
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 50;
+
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+    }
+
+    h1 {
+        width: max-content;
+        color: tomato;
+        font-size: 13px;
+        border-bottom: 0.5px solid tomato;
+        margin: 3px 0;
+    }
+    
+    label {
+        width: max-content;
+        color: tomato;
+        font-size: 13px;
+        border-bottom: 0.5px solid tomato;
+        margin: 3px 0;
+    }
+    
+    .desc {
+        font-size: 12px;
+    }
+
+    .tag {
+        height: max-content;
+        width: max-content;
+        background-color: teal;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+        color: white;
+
+        h3 {
+            font-size: 12px;
+            color: white !important;
+            margin: 0px;
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+    }
+
+    
+
+}
+
+form {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(88, 87, 87);
+  }
+  
+  input {
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 12px;
+    color: rgb(185, 184, 184);
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+  
+  textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .submitButton {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
+  }
+
+.button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+
+}
+
+
+.popup {
+  position: relative;
+  bottom: 50px;
+  right: 10px;
+}
+
