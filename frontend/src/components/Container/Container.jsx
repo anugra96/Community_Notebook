@@ -130,7 +130,7 @@ export default function Container({toggleCenter, setToggleCenter}) {
                     <></>
                     }
                     
-                    <Metadata />
+                    {/* <Metadata /> */}
                     <div className="hintbox"><div className="hint_text">HINT: Double tap anywhere to add a note!</div></div>
                 </div>
 

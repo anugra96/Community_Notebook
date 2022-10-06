@@ -146,7 +146,7 @@ function MapContainer({ notes, setNotes, selected, setSelected, mapRef, resetSel
 
     return (
         <>
-            {/* <div className="AddNew" onClick={() => setAddNewActive(!addNewActive)}><span>Add New Note</span></div>
+            <div className="AddNew" onClick={() => setAddNewActive(!addNewActive)}><span>Add New Note</span></div>
             {(addNewActive === true) ?
                     <>
                     <button className="ConfirmButton" onClick={() => setNewNote({lat: currentCenter.latitude, long: currentCenter.longitude,})}>Confirm Location</button>
@@ -157,7 +157,7 @@ function MapContainer({ notes, setNotes, selected, setSelected, mapRef, resetSel
                     <>
                     </>
 
-            } */}
+            }
 
             <Map
                 {...viewState}
